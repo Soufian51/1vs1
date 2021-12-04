@@ -1,0 +1,50 @@
+# Kits configuration
+
+title: "Kits"
+content: "Choose your kit you wish here."
+
+# Adding item is simple: "id:meta:amount:enchantment_name:level:enchantment2_name:levelOfEnchantment2:enchantment3_name:enchantment4_name" -> note: ench3 and 4 will use default level of 1
+
+# imageLink: It is there for adding images. It is pretty simple: You specify images location location.
+# there are two location types path (on filesystem, machine) and url (from the internet)
+# e.g. you can do this "url:https://someWebsite.com/images/superCoolImage.png"
+# or using path this: "path:C:\users\you\someImage.png"
+
+kits:
+  archer: # internal saving name
+    displayName: "§aArcher" # name users see, for e.g. with colors etc.
+    helmet: [
+      # id, meta, count, customName (leave empty if none wished, but DO NOT REMOVE IF ENCHANTMENTS ARE ADDED!!), "enchantment_name:enchantment_level(if none it will default to 1), "enchantment2", ...
+      "310", "0", "1", "Archer helmet", "protection:3", "unbreaking"
+    ]
+    chestplate: [
+      "311", "0", "1", "", "protection:3"
+    ]
+    leggings: [
+        "312", "0", "1", "", "protection:3"
+    ]
+    boots: [
+        "313", "0", "1", "", "protection:3"
+    ]
+    items: [
+        ["261", "0", "1", "Robin Hoods Bow", "unbreaking:3"], ["262", "0", "64"], ["322", "0", "3"]
+    ]
+  warrior:
+    displayName: "§aWarrior"
+    imageLink: "" # If you want no image, just remove this.
+    helmet: [
+      # id, meta, count, customName (leave empty if none wished, but DO NOT REMOVE IF ENCHANTMENTS ARE ADDED!!), "enchantment_name:enchantment_level(if none it will default to 1), "enchantment2", ...
+        "310", "0", "1", "Warrior helmet", "protection:3", "unbreaking"
+    ]
+    chestplate: [
+        "311", "0", "1", "Warrior chestplate", "protection:3"
+    ]
+    leggings: [
+        "312", "0", "1", "", "protection:3"
+    ]
+    boots: [
+        "313", "0", "1", "Warrior boots", "protection:3"
+    ]
+    items: [
+      [ "276", "0", "1", "Sharp Sword", "sharpness:2", "knockback", "unbreaking"], [ "320", "0", "32" ]
+    ]

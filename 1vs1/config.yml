@@ -1,0 +1,15 @@
+
+# When both players challenged each other, this is in ms how long the delay between showing the Kit UI is
+delay_kit_pick: 30 # 30 ticks, 20 ticks = 1 second, 30 ticks = 1.5 seconds, removing this will result in default to 0
+kit_pick_time: 160 # 8 seconds to pick kits, after this duel request will be aborted, removing this will default to 160 (8 seconds)
+
+
+# in those worlds player can challenge others, but pvp is disabled there. It can be multiple worlds like e.g. "world" and "lobby" are challenge worlds and "survival" is normal world
+# If left empty/removed any world is a challenge world
+# Also, on any world damage is disabled like fall damage etc.
+# Specify world folder name, very important so plugin can recognize
+challenge_worlds:
+  - "world": true # true = damage disabled, false = damage enabled like fall damage etc.
+
+# E.g. if I tap, for how long request will remain, removing or setting to 0 or lower disables this
+requestDuration: 8 # seconds

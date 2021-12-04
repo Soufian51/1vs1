@@ -1,0 +1,21 @@
+# Here you can choose the default settings for each arena
+# If you want other settings in Arena X, copy this config to its world folder and then configure it as you want
+
+# override level name
+overrideLevelName: "" # leave empty or remove field, but e.g. if you wanna represent an arenas name different, change its individual config. Do not do this with this one, cause this will apply otherwise global changes.
+# Duration of match in seconds
+duration: 45 # if it is smaller or equals 0, there will be no time limitation. If one of the players dies, match ends.
+countdown: 5 # same as above, if smaller or equals 0 then there will be no countdown
+blockedCommands: ["lobby", "hub"] # block commands, so e. g. player cant tp out with other plugins help
+# (Dis-)allow breaking blocks, if no value entered it will default to false
+blockBreak: false
+# (Dis-)allow placing blocks, if no value entered it will default to false
+blockPlace: false
+# (Dis-)allow interactions, if no value entered it will default to false
+blockInteractions: false
+
+# Cancels PlayerIllegalMoveEvent/PlayerInvalidMoveEvent. This is useful, when something bugs with movement or it teleports you back when you e. g. go over a stair, slab or ladder
+# This is because nukkits poor anti-cheat detection, which makes it worse for going over slabs etc.
+# but be warned, maybe modded clients can also run ultra fast because there is no protection at all anymore except fly protection
+# Removing this or setting invalid values will make this default to false, which means it will be enabled
+allowIllegalMove: true

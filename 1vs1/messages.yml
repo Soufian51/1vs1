@@ -1,0 +1,52 @@
+# Here you can configure messages! If you want one not to be sent, just remove it.
+# Don't mind the grammar, messages were only made for demonstration purposes
+
+starting_match: "chat:Starting match against {player} at the map \"{level}\", who is using kit {kit}."
+
+you_didnt_pick: "chat:You did not pick a kit in time, that's why match has been aborted."
+
+challenged_sender: "chat:You challenged {player} to a duel."
+challenged_receiver: "chat:{player} challenged you to a duel."
+already_challenged: "chat:You already challenged player {player}."
+
+select_kit: "chat:Player {player} accepted your request, choose kits now."
+you_aborted_selection: "chat:You aborted duel request against {player}, because you didn't pick a kit."
+aborted_selection: "chat:Player {player} did not pick a kit, duel request has been aborted."
+both_abored_selection: "chat:You both did not pick a kit, duel request has been aborted."
+successfully_picked: "chat:You successfully picked kit {kit}."
+opponent_successfully_picked: "chat:Opponent picked the kit {kit}."
+
+
+countdown_tick: "tip:Match is starting in {time}" # wont be sent when no countdown is configured
+started: "title:Match started!:Good luck."
+time_tick: "tip:Match is ending in {time}" # wont be sent when no time is configured
+
+# Disables sending broadcast to players who are currently in a match, with settings this to true you can enable it
+send_broadcast_to_ingame_players: false
+# Disables sending the win broadcast, because players are getting an individual message. If wished, this can be set to true
+send_broadcast_to_involving_players: false
+# Both values of the above fields default to false if nothing has been set
+
+win_broadcast: "chat:{winner} won with Kit {kit_winner} and {hp_winner} HP against {looser}, who used Kit {kit_looser} at map \"{level}\"." # instead of {health} (HP, no hearts) you can also use {hp}
+draw_broadcast: "chat:Player {winner} using {kit_winner} and {looser} using {kit_looser} had a draw with {hp} HP at map \"{level}\"." # do not get confused by winner and looser, cause there are none. Due to efficiency reasons the variable remained winner, while none of them won.
+# e.g. to fall damage, but maybe also because of poison potion
+win_broadcast_death: "chat:{winner} won using Kit {kit_winner} against {looser}, due to dying with {hp_winner} HP against {looser}, who had {hp_looser} HP and used Kit {kit_looser} at map \"{level}\"."
+win_broadcast_timeout: "chat:{winner} won using Kit {kit_winner} due to timeout with {hp_winner} HP against {looser}, who had {hp_looser} HP and used Kit {kit_looser} at map \"{level}\"." # to disable, as said above just remove this field
+win_broadcast_quit: "chat:{winner} won with {hp_winner} HP against {looser}, who used Kit {kit_looser} and had {hp_looser} HP, because player quit the game." # to disable, as said above just remove this field
+win_broadcast_quit_teleport: "chat:{winner} won with {hp_winner} HP against {looser}, who used Kit {kit_looser} and had {hp_looser} HP, because player left the arena." # e.g. if player teleports out with /lobby or so
+
+you_won: "chat:Congratulations on winning against {looser}! Your opponent was using Kit {kit} and you played at the map \"{level}\"."
+you_won_death: "chat:You won against {looser}, cause player died. Your opponent was using Kit {kit} and you played at the map \"{level}\"."
+you_won_quit: "chat:You won against {looser}, cause player quit the server. Your opponent was using Kit {kit} and you played at the map \"{level}\"."
+you_won_quit_teleport: "chat:You won against {looser}, cause player quit the arena. Your opponent was using Kit {kit} and you played at the map \"{level}\"."
+you_won_timeout: "chat:You won against {looser}, cause time ran out. Your opponent was using Kit {kit}, had {hp} HP and you played at the map \"{level}\"."
+
+you_lost: "chat:You lost against {winner}, who was using {kit} and had {hp} HP left at map \"{level}\"."
+you_lost_death: "chat:You lost against {winner}, cause you died. Your opponent was using Kit {kit}, had {hp} HP left and you played at the map \"{level}\"."
+you_lost_quit_teleport: "chat:You lost against {winner}, cause you quit the arena. Your opponent was using Kit {kit}, had {hp} HP left and you played at the map \"{level}\"."
+you_lost_timeout: "chat:You lost against {winner}, cause time ran out. Your opponent was using Kit {kit}, had {hp} HP left and you played at the map \"{level}\"."
+
+you_had_a_draw: "chat:You and {opponent} had a draw, cause both had {hp} HP left over at map \"{level}\"."
+
+# E.g. when plugin shuts down or server goes offline
+premature_ending: "chat:Server shuts down or plugin gets disabled, stopping duel. No winner has been selected due to unexpected ending."

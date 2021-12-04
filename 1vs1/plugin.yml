@@ -1,0 +1,13 @@
+name: 1vs1
+main: com.sero583.onevsonerm.Main
+version: "1.0"
+api: ["1.0.5"]
+load: POSTWORLD
+author: Steffen
+description: 1vs1 plugin
+prefix: "1vs1"
+
+permissions:
+  1vs1.command.setup:
+    description: "Allows user to run the setup command."
+    default: op
